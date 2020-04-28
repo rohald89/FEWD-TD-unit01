@@ -15,7 +15,12 @@ body {
 
 a {
   text-decoration: none;
-  color: #999;
+  color: grey;
+}
+.current{
+  color: white;
+  padding-bottom: 3px;
+  border-bottom: 1px solid white;
 }
 a:hover {
   color: #6633ff;
@@ -25,7 +30,7 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: black;
+  background: rgba(0, 0, 0, 0.6);
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -62,6 +67,16 @@ header {
   overflow: hidden;
   padding-top: 60px;
 }
+.experience-header{
+  background: url('images/experience.jpg') no-repeat center center;
+}
+.hobbies-header {
+  background: url('images/hobbies.jpg') no-repeat center center;
+}
+.experience-header,
+.hobbies-header {
+  min-height: 470px;
+}
 header {
   line-height: 1.5;
 }
@@ -70,14 +85,15 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 2px solid white;
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(10deg);
+  box-shadow: 0 0 10px 3px white;
 }
 .tag {
-  background-color: #efefef;
+  background-color: rgba(255, 255, 255, 0.4);
   color: black;
   padding: 10px;
   border-radius: 5px;
@@ -86,7 +102,7 @@ header .profile-image:hover {
 }
 .location {
   background-color: #222;
-  color: yellow;
+  color: white;
 }
 .card {
   margin: 30px;
@@ -106,12 +122,12 @@ header .profile-image:hover {
   padding-top: 15px;
 }
 
-ul.skills {
+ul.goals {
   padding: 0;
   text-align: center;
 }
 
-.skills li {
+.goals li {
   border-radius: 6px;
   display: inline-block;
   background: #ff9904;
@@ -120,16 +136,35 @@ ul.skills {
   margin: 2px;
 }
 
-.skills li:nth-child(odd) {
+.goals li:nth-child(odd) {
   background: #0399ff;
 }
 
-ul.languages {
+.card ul{
+  list-style-type: none;
+  margin: 10px;
+}
+
+.company{
+  font-weight: bold;
+  font-size: 20px;
+  text-indent: -30px;
+}
+
+.company li{
+  font-weight: normal;
+  font-size: 16px;
+  text-indent: 0;
+}
+ul.jobtitle {
+  padding: 0;
+}
+.card1 ul {
   padding: 0;
   text-align: center;
 }
 
-.languages li {
+.card1 li {
   display: inline-block;
   background: grey;
   color: white;
@@ -138,7 +173,7 @@ ul.languages {
   border-radius: 6px;
 }
 
-.languages li:nth-child(odd) {
+.card1 li:nth-child(odd) {
   background: darkgrey;
 }
 
