@@ -15,6 +15,12 @@ body {
 h2 {
   text-align: center;
 }
+
+img {
+  max-width: 300px;
+  max-height: 300px;
+  width: 100%;
+}
 /* Link Styles */
 
 a {
@@ -70,6 +76,7 @@ header {
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
+  min-height: 470px;
 }
 .experience-header{
   background: url('images/experience.jpg') no-repeat center center;
@@ -77,16 +84,11 @@ header {
 .hobbies-header {
   background: url('images/hobbies.jpg') no-repeat center center;
 }
-.experience-header,
-.hobbies-header {
-  min-height: 470px;
-}
-.hobbies-header h1 {
-  margin-top: 150px;
-}
+
 header {
   line-height: 1.5;
 }
+
 header .profile-image {
   margin-top: 50px;
   width: 150px;
@@ -95,10 +97,12 @@ header .profile-image {
   border: 2px solid white;
   transition: all .5s;
 }
+
 header .profile-image:hover {
   transform: scale(1.2) rotate(10deg);
   box-shadow: 0 0 10px 3px white;
 }
+
 .tag {
   background-color: rgba(255, 255, 255, 0.4);
   color: black;
@@ -107,6 +111,7 @@ header .profile-image:hover {
   display: table;
   margin: 10px auto;
 }
+
 .location {
   background-color: #222;
   color: white;
@@ -114,22 +119,19 @@ header .profile-image:hover {
 
 .gallery {
   float: left;
-  margin: 10px;
+  margin: 25px 15px;
   text-align: center;
   box-shadow: 0 4px 8px;
 }
 
+.gallery:hover {
+  box-shadow: 0 6px 10px;
+}
 
 .card2{
   max-width: 1400px;
   display: inline-block;
   text-align: center;
-}
-
-img {
-  max-width: 300px;
-  max-height: 300px;
-  width: 100%;
 }
 
 .description{
@@ -196,8 +198,6 @@ ul.goals {
 ul.jobtitle {
   padding: 0;
 }
-
-
 
 .card1 ul {
   padding: 0;
