@@ -11,6 +11,10 @@ body {
   color: #222;
   background: #f7f5f0;
 }
+
+h2 {
+  text-align: center;
+}
 /* Link Styles */
 
 a {
@@ -77,6 +81,9 @@ header {
 .hobbies-header {
   min-height: 470px;
 }
+.hobbies-header h1 {
+  margin-top: 150px;
+}
 header {
   line-height: 1.5;
 }
@@ -104,16 +111,46 @@ header .profile-image:hover {
   background-color: #222;
   color: white;
 }
-.card {
+
+.gallery {
+  float: left;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px;
+}
+
+
+.card2{
+  max-width: 1400px;
+  display: inline-block;
+  text-align: center;
+}
+
+img {
+  max-width: 300px;
+  max-height: 300px;
+  width: 100%;
+}
+
+.description{
+  padding: 15px 0;
+}
+
+.card,
+.card2{
   margin: 30px;
   padding: 20px 40px 40px;
-  max-width: 500px;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
 }
+
+.card{
+  max-width: 500px;
+}
+
 .card:hover {
   border-color: black;
 }
@@ -159,6 +196,9 @@ ul.goals {
 ul.jobtitle {
   padding: 0;
 }
+
+
+
 .card1 ul {
   padding: 0;
   text-align: center;
@@ -244,7 +284,6 @@ a.social:hover {
     max-width: 1200px;
     padding: 0 30px;
   }
-
 
   main {
     padding-top: 20px;
