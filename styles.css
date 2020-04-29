@@ -117,27 +117,6 @@ header .profile-image:hover {
   color: white;
 }
 
-.gallery {
-  float: left;
-  margin: 25px 15px;
-  text-align: center;
-  box-shadow: 0 4px 8px;
-}
-
-.gallery:hover {
-  box-shadow: 0 6px 10px;
-}
-
-.card2{
-  max-width: 1400px;
-  display: inline-block;
-  text-align: center;
-}
-
-.description{
-  padding: 15px 0;
-}
-
 .card,
 .card2{
   margin: 30px;
@@ -159,6 +138,28 @@ header .profile-image:hover {
 
 .card h3 {
   padding-top: 15px;
+}
+
+.gallery {
+  float: left;
+  margin: 25px 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px;
+  border-radius: 20px;
+}
+
+.gallery:hover {
+  box-shadow: 0 6px 10px;
+}
+
+.card2{
+  max-width: 1400px;
+  display: inline-block;
+  text-align: center;
+}
+
+.description{
+  padding: 15px 0;
 }
 
 ul.goals {
